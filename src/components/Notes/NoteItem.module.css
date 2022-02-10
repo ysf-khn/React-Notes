@@ -1,0 +1,13 @@
+.note {
+  position: relative;
+  background-color: white;
+  padding: 0.5rem;
+  border-radius: 10px;
+}
+
+.del {
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+}

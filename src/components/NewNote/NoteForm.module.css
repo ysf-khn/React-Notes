@@ -30,13 +30,27 @@ textarea {
 
 button {
   padding: 0.4rem 0.7rem;
-  display: block;
+
   margin: 0.5em auto;
   border: 1px solid rgb(80, 228, 80);
   border-radius: 20px;
   cursor: pointer;
 }
 
-button:hover {
+.addBtn:hover {
   background-color: rgb(80, 228, 80);
+}
+
+.cancelBtn {
+  border: 1px solid rgb(238, 95, 95);
+}
+
+.cancelBtn:hover {
+  background-color: rgb(238, 95, 95);
+}
+
+.buttonDiv {
+  margin: 0.5rem 0;
+  display: flex;
+  justify-content: space-around;
 }

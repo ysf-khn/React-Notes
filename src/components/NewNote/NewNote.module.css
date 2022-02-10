@@ -1,0 +1,8 @@
+.btn {
+  display: block;
+  margin-top: 1rem;
+}
+
+.btn:hover {
+  background-color: rgb(80, 228, 80);
+}

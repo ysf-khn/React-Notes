@@ -16,8 +16,9 @@ const NoteForm = (props) => {
 
   const submitHandler = (event) => {
     event.preventDefault();
-    console.log(title, body);
-    props.onEnterNote();
+    if (title.trim().length > 0 && body.trim().length > 0) {
+      props.onEnterNote({ title, body });
+    }
   };
 
   return (
@@ -36,7 +37,12 @@ const NoteForm = (props) => {
           value={body}
           onChange={bodyInputHandler}
         ></textarea>
-        <button>Add Note</button>
+        <div className={classes.buttonDiv}>
+          <button className={classes.addBtn}>Add Note</button>
+          <button className={classes.cancelBtn} onClick={props.onCancel}>
+            Cancel
+          </button>
+        </div>
       </form>
     </Card>
   );
