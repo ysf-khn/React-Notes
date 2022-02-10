@@ -1,0 +1,42 @@
+.form {
+  margin-top: 1em;
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+}
+
+label {
+  display: block;
+  margin-bottom: 0.3rem;
+}
+
+textarea {
+  height: 12rem;
+  display: block;
+}
+
+input,
+textarea {
+  width: 15rem;
+  border: none;
+  padding: 0.5em;
+  border-radius: 5px;
+  margin-bottom: 0.5em;
+}
+
+*:focus {
+  outline: none;
+}
+
+button {
+  padding: 0.4rem 0.7rem;
+  display: block;
+  margin: 0.5em auto;
+  border: 1px solid rgb(80, 228, 80);
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgb(80, 228, 80);
+}
